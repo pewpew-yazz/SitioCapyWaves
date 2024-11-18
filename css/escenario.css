@@ -1,0 +1,69 @@
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115vh; /* Ajusta la altura del contenedor */
+    overflow: hidden; /* Evita que los elementos se desborden */
+}
+
+#text1{
+    font-family: 'Jersey 10';
+    position: absolute;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 600px;
+    letter-spacing: 7px;
+}
+
+#text2{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 500px;
+}
+
+.parallax img{
+    padding-top: 55px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+/*seccion 2*/
+
+.section2 {
+    position: relative;/* Esto asegura que la sección 2 comience después de la altura de la parallax */
+    padding: 60px;
+    text-align: center;
+    background: linear-gradient(#286a81,#5abed7, #FFF);
+}
+
+.imagen1 {
+    width: 25%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+    max-width: 500px; /* Limita el tamaño máximo de la imagen */
+    margin-top: 40px; /* Añade espacio entre el párrafo y la imagen */
+    display: block; /* Asegura que la imagen se muestre como bloque */
+    margin-left: auto;
+    margin-right: auto; /* Centra la imagen */
+}
+
+.section2 h2{
+    font-family: 'Jersey 10';
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+.section2 p{
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 1.5;
+}
