@@ -47,36 +47,40 @@
 }
 
 
-.content{
+.content {
     line-height: 24px;
     color: #000000;
     position: absolute;
     top: 10%;
-    left: 60%;
-    text-align: justify;
+    right: 70%; /* Cambiado de left a right */
+    text-align: left; /* Alinea todo el contenido al lado izquierdo */
     width: 350px;
 }
-.content h1{
-    line-height:38px;
+
+.content h1 {
+    line-height: 38px;
     letter-spacing: 8px;
-    font-family: 'jersey 10';
+    font-family: 'Jersey 10';
     margin-top: 20px;
-    text-align: center;
-    font-size: 10pt;
-    color: #E88735;
     font-size: 30pt;
+    color: #21596c;
     margin-bottom: 15px;
 }
-.content button{
-    margin-left: 110px;
-    margin-top: 30px;
+
+.content .des {
+    text-align: left; /* Asegura que la descripción esté alineada a la izquierda */
+}
+
+.content button {
+    margin: 30px 0 0 0; /* Elimina el margen izquierdo */
     padding: 10px 30px;
     border-radius: 20px;
     background-color: #E88735;
     color: #fff;
     border: none;
-    display: inline-block; /* Cambiado de 'float: center' a 'display: inline-block' */
-    transition: transform 0.s ease-in-out; /* Añade una transición suave */
+    display: inline-block;
+    transition: transform 0.3s ease-in-out; /* Suaviza la animación */
+    text-align: left; /* Opcional, asegura la alineación izquierda */
 }
 .content button:hover{
     cursor: pointer;

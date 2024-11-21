@@ -26,7 +26,6 @@ header {
 }
 
 .header-center{
-    padding-right: 620px;
     align-items: center;
     align-content: center;
     text-align: center;
@@ -133,4 +132,36 @@ nav ul li .dropdown-menu li a:hover {
     outline: 2px solid; /* Define el grosor y el estilo del outline */
     outline-color: rgb(255, 255, 255); /* Especifica el color del outline */
     transition: background-color 1s, color 1s, outline-color 1s;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.profile-picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-arrow {
+    font-size: 16px;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.profile-container:hover .profile-arrow {
+    transform: rotate(180deg);
 }
