@@ -6,7 +6,6 @@
 }
 
 body {
-    background: #FFF;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -21,12 +20,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f29d43;
+    background-color: #12addb;
+    transition: background-color 0.3s ease;
     z-index: 100;
 }
 
 .header-center{
-    padding-left: 70px;
+    padding-right: 620px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 
 .header-left img {
@@ -90,12 +93,19 @@ nav ul li:hover .dropdown-arrow {
     /* Rota la flecha hacia arriba */
 }
 
+nav ul li .dropdown-menu li a:hover {
+    background-color: #f2f2f2;
+}
+
 .header-right button {
     font-style: bold;
     padding: 10px 20px;
     margin-left: 10px;
     font-size: 13px;
     cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .header-right button:hover {
@@ -105,17 +115,22 @@ nav ul li:hover .dropdown-arrow {
 
 .btn-register {
     background-color: #ffffff;
-    color: #f29d43;
-    border: none;
+    color: #12addb;
+    border-color: #FFF;
     border-radius: 25px;
+    transition: background-color 1s, color 1s;
+    
 }
 
 .btn-login {
-    background-color: #f29d43;
+    background-color: #12addb;
     color: white;
     border: 2px solid white;
     border-radius: 25px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    outline: 2px solid; /* Define el grosor y el estilo del outline */
+    outline-color: rgb(255, 255, 255); /* Especifica el color del outline */
+    transition: background-color 1s, color 1s, outline-color 1s;
 }

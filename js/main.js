@@ -18,4 +18,3 @@ menuItems.forEach(item => {
         dropdownMenu.style.display = 'none';  // Oculta el menú desplegable
     });
 });
-
